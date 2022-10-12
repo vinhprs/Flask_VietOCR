@@ -11,6 +11,7 @@ def make_response(data={}, status=200):
     res.headers.add("Content-Type", "application/json")
     res.headers.add("Accept", "content-type/png")
     res.headers.add("Accept", "content-type/jpg")
+    res.headers.add("Accept", "content-type/jpge")
     return res
 
 
