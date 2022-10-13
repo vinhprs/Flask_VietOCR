@@ -2,6 +2,7 @@ import cv2
 import sys
 from PIL import Image
 from flask import Flask
+from flask_cors import CORS
 
 from vietocr.tool.predictor import Predictor
 from vietocr.tool.config import Cfg
@@ -17,6 +18,6 @@ config["predictor"]["beamsearch"] = False
 detector = Predictor(config)
 
 app = Flask(__name__)
-
+CORS(app)
 from app.routes import *
 from app.utils import *

@@ -12,6 +12,10 @@ def make_response(data={}, status=200):
     res.headers.add("Accept", "content-type/png")
     res.headers.add("Accept", "content-type/jpg")
     res.headers.add("Accept", "content-type/jpge")
+    res.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    res.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    res.headers.add('Access-Control-Allow-Credentials', 'true')
+
     return res
 
 

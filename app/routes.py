@@ -8,6 +8,11 @@ import base64
 from io import BytesIO
 from PIL import Image
 
+api_recognize_cors_config = {
+    "origins": ["http://127.0.0.1:5000"],
+    "methods": ["OPTIONS", "GET", "POST"],
+    "allow_headers": ["Authorization", "Content-Type"]
+}
 
 @app.route("/", methods=["GET"])
 @cross_origin()
@@ -55,3 +60,4 @@ def recognize():
     predicted = "\n".join(predicted)
 
     return make_response(data=dict(predicted=predicted, predicted_all=predicted_all))
+
