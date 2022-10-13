@@ -1,1 +1,1 @@
-web:gunicorn TEST_VIETOCR.wsgi --log-file -
+web:gunicorn TEST-VIETOCR.wsgi --log-file -
