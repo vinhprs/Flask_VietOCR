@@ -1,1 +1,1 @@
-web:gunicorn flaskocrrapp:app
+web:gunicorn app:app
