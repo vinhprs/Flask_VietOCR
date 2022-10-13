@@ -1,1 +1,1 @@
-web:gunicorn TEST-VIETOCR.wsgi --log-file -
+web: gunicorn app:app
