@@ -2,4 +2,3 @@ venv/
 weights/
 .env
 sample/
-Procfile
