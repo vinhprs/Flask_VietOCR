@@ -47,3 +47,4 @@ vietocr==0.3.9
 Werkzeug==2.1.2
 zipp==3.8.01
 heroku
+gunicorn
